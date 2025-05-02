@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>nish digital </title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#builds">Builds</a></li>
+        <li><a href="#stars">TheThreeStars</a></li>
+        <li><a href="#contact">Say Hi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="floral-left">
+        <img src=""  loading="eager">
+    </div>
+    <div class="intro">
+      <h1 class="signature">Ni-shaat Gafieldien</h1>
+      <p class="p1">Web developer</p>
+      <p class="p2">UI/UX designer</p>
+      <p class="p3">Social media manager</p>
+      <a href="#cv-section" class="click-me" onclick="revealCV(event)">Click me!</a>
+    </div>
+    <div id="cv-section" class="cv-container hidden"></div>
+
+    <div class="floral right">
+
+    </div>
+  </section>
+
+  <section id="bio" class="gallery">
+    <div class="card" onclick="scrollToSection('pinterest')">
+      <img src="assets/pinterest.png" alt="Pinterest board" />
+      <p>Pinterest board</p>
+    </div>
+    <div class="card" onclick="scrollToSection('work')">
+      <img src="assets/work.png" alt="Work" />
+      <p>Work</p>
+    </div>
+    <div class="card" onclick="scrollToSection('recipes')">
+      <img src="assets/recipes.png" alt="Recipes" />
+      <p>Recipes</p>
+    </div>
+    <div class="card" onclick="scrollToSection('diary')">
+      <img src="assets/diary.png" alt="Diary of Nish" />
+      <p>Diary of Nish</p>
+    </div>
+    <div class="card" onclick="scrollToSection('library')">
+      <img src="assets/library.png" alt="Nish's Library" />
+      <p>Nish’s library</p>
+    </div>
+  </section>
+
+  <!-- Placeholder sections -->
+  <section id="pinterest" class="content-section">Pinterest Board Section</section>
+  <section id="work" class="content-section">Work Projects Section</section>
+  <section id="recipes" class="content-section">Recipes Section</section>
+  <section id="diary" class="content-section">Diary Section</section>
+  <section id="library" class="content-section">Library Section</section>
+
+  <section id="contact">
+    <h2>Say Hi!</h2>
+    <!-- Contact links will go here -->
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
